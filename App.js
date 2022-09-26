@@ -4,6 +4,8 @@ import RadioForm from 'react-native-simple-radio-button';
 import NumericInput from 'react-native-numeric-input'
 import {basicStyle, fancyStyle} from './styles/Styles.js'
 
+// AUTHOR: Joonas Kelahaara
+
 export default function App() {
 
   const [weight, setWeight] = useState(0);
@@ -36,7 +38,7 @@ export default function App() {
     let burning = weight / 10;
     let left = grams - burning * hours;
 
-    if (gender === 'male') {
+    if (gender == 'male') {
       result = left / (weight * 0.7)
     } else {
       result = left / (weight * 0.6)
